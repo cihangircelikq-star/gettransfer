@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>GetTransfer - Modern Transfer ve Sürücü Yönetim Platformu</title>
+    <meta name="title" content="GetTransfer - Modern Transfer ve Sürücü Yönetim Platformu" />
+    <meta name="description" content="Havalimanı transferi, şehir içi transfer ve özel sürücü hizmetleri. Gerçek zamanlı konum takibi, online rezervasyon ve güvenli ödeme ile transfer deneyimi." />
+    <meta name="keywords" content="transfer, havalimanı transferi, özel sürücü, araç kiralama, VIP transfer, şehir içi transfer, rezervasyon" />
+    <meta name="author" content="GetTransfer" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="msapplication-TileColor" content="#2563eb" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gettransfer.vercel.app/" />
+    <meta property="og:title" content="GetTransfer - Modern Transfer Platformu" />
+    <meta property="og:description" content="Havalimanı transferi, şehir içi transfer ve özel sürücü hizmetleri. Gerçek zamanlı konum takibi ile güvenli transfer." />
+    <meta property="og:image" content="https://gettransfer.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="GetTransfer" />
+    <meta property="og:locale" content="tr_TR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gettransfer.vercel.app/" />
+    <meta property="twitter:title" content="GetTransfer - Modern Transfer Platformu" />
+    <meta property="twitter:description" content="Havalimanı transferi, şehir içi transfer ve özel sürücü hizmetleri. Gerçek zamanlı konum takibi ile güvenli transfer." />
+    <meta property="twitter:image" content="https://gettransfer.vercel.app/og-image.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gettransfer.vercel.app/" />
+    
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
+    <script type="module">
+      if (import.meta.hot?.on) {
+        import.meta.hot.on('vite:error', (error) => {
+          if (error.err) {
+            console.error(
+              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
+            )
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

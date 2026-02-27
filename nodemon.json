@@ -1,0 +1,10 @@
+{
+  "watch": ["backend"],
+  "ext": "ts,mts,js,json",
+  "ignore": ["backend/dist/*"],
+  "exec": "tsx server-local.ts",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": 1000
+}

@@ -1,0 +1,30 @@
+import React from 'react'
+
+type Props = { children: React.ReactNode }
+type State = { hasError: boolean }
+
+export class ErrorBoundary extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+
+  componentDidCatch(error: unknown) {
+    console.error({ level: 'error', msg: 'frontend_error', error })
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: 16 }}>
+          Bir şeyler ters gitti. Lütfen sayfayı yenileyin.
+        </div>
+      )
+    }
+    return this.props.children
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "GetTransfer API", "version": "1.0.0" },
+  "servers": [{ "url": "/api" }],
+  "paths": {
+    "/health": { "get": { "summary": "Health check", "responses": { "200": { "description": "OK" } } } },
+    "/auth/login": { "post": { "summary": "Login", "responses": { "200": { "description": "Logged in" } } } },
+    "/auth/register/customer": { "post": { "summary": "Register customer", "responses": { "200": { "description": "Registered" } } } },
+    "/auth/register/driver": { "post": { "summary": "Register driver", "responses": { "200": { "description": "Registered" } } } },
+    "/drivers": { "get": { "summary": "List drivers", "responses": { "200": { "description": "OK" } } } },
+    "/bookings": { "get": { "summary": "List bookings", "responses": { "200": { "description": "OK" } } } },
+    "/places/search": { "get": { "summary": "Search places", "responses": { "200": { "description": "OK" } } } },
+    "/payments/intent": { "post": { "summary": "Create payment intent", "responses": { "200": { "description": "OK" } } } }
+  }
+}

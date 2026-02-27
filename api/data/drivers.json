@@ -1,0 +1,24 @@
+[
+  {
+    "id": "drv_vedat",
+    "name": "vedat",
+    "email": "vedat@test.com",
+    "vehicleType": "sedan",
+    "vehicleModel": "Araç",
+    "licensePlate": "",
+    "location": { "lat": 0, "lng": 0 },
+    "available": false,
+    "approved": true
+  },
+  {
+    "id": "drv_fatih",
+    "name": "fatih",
+    "email": "fatih@test.com",
+    "vehicleType": "sedan",
+    "vehicleModel": "Araç",
+    "licensePlate": "",
+    "location": { "lat": 0, "lng": 0 },
+    "available": false,
+    "approved": true
+  }
+]
